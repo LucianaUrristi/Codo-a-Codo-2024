@@ -43,6 +43,8 @@ section.menu{
     justify-content: space-between;
     max-width: 1440px;
     width: 90%;
+    border-radius: 10px;
+    background-color: #9DAE7D;
 }
 
 header.menu__header{
@@ -50,6 +52,12 @@ header.menu__header{
     justify-content: space-between;
     align-items: center;
     gap: 1em;    
+}
+
+/*No tomo el renderizado de la imagen*/
+.logo{
+    width: 5em;
+    height: 5em;
 }
 
 .menu__list{
@@ -69,7 +77,7 @@ section.title{
 .title__container{
     display: flex;
     flex-direction: column;
-    width: 65%;
+    
     padding: 0;
     margin: 0;
 }
@@ -105,6 +113,7 @@ section.resume{
     font-size: 32px;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 .resume__paragraph{
     font-size: 16px;
@@ -138,16 +147,16 @@ section.pCaracters{
 }
 
 .pCaracters__box{
-    width: 13vw;
-    height: 13vw;
+    width: 15vw;
+    height: 15vw;
     gap: 10px;
     background-color: #FEF3F0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    max-width: 14em;
-    max-height: 14em;
+    max-width: 30em;
+    max-height: 30em;
 }
 
 .pCaracters__box ul{
@@ -160,6 +169,11 @@ section.pCaracters{
     align-items: center;
     margin-top: 5px;
     
+}
+
+.pCaracters__img img{
+    width: 100px;
+    height: 150px;
 }
 
 /*Sección Pilares*/
@@ -187,8 +201,8 @@ section.pilares{
 }
 
 .pilares__box{
-    width: 13vw;
-    height: 13vw;
+    width: 15vw;
+    height: 23vw;
     gap: 10px;
     background-color: #FEF3F0;
     display: flex;
@@ -210,6 +224,10 @@ section.pilares{
     margin-top: 5px;
 }
 
+.pilares__img img{
+    width: 100px;
+    height: 150px;
+}
 
 /*Contacto*/
 section.formcontacto{
@@ -250,7 +268,7 @@ section.formcontacto{
 .formcontacto__input:focus {
     border: 2px solid #C56742;
 }
-.formcontato__textarea{
+.formcontacto__textarea{
     padding: 1% 0 3% 1%;
     margin: 2% 0;
     border: none;
@@ -283,7 +301,7 @@ section.formcontacto{
     margin-top: 1.5%;
 }
 
-.formcontato__botao:hover {
+.formcontacto__botao:hover {
     background-color: #d4886a;
     transform: translateY(-2px);
 }
