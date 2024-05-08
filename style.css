@@ -121,7 +121,7 @@ section.resume{
 
 /*Sección Personajes principales*/
 
-section.pCaracters{
+/* section.pCaracters{
     display: flex;
     flex-direction: column;
     margin-top: 32px;
@@ -174,11 +174,11 @@ section.pCaracters{
 .pCaracters__img img{
     width: 100px;
     height: 150px;
-}
+} */
 
 /*Sección Pilares*/
 
-section.pilares{
+/* section.pilares{
     display: flex;
     flex-direction: column;
     margin-top: 32px;
@@ -227,6 +227,51 @@ section.pilares{
 .pilares__img img{
     width: 100px;
     height: 150px;
+} */
+
+/* personajes */
+.container_personajes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 0 0;
+  width: 80%;
+  height: 220px;
+  margin: 0 auto;
+
+}
+
+.container_imagenes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100px;
+  height: 100%;
+}
+
+.container_imagenes img {
+ width: 100px;
+  height: 150px;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(10px 7px 10px black);
+}
+
+.container_imagenes img:hover {
+  transform: scale(1.5);
+
+}
+
+.nombre_imagen {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 10px;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.subtitulo_personajes {
+  text-align: center;
+  padding: 20px;
 }
 
 /*Contacto*/
@@ -444,7 +489,7 @@ section.title{
 }
 
 /*Personajes Principales*/
-.pCaracters__line{
+/* .pCaracters__line{
     flex-wrap: wrap;
     
 }
@@ -455,15 +500,45 @@ section.title{
     margin-bottom: 5%;
 }
 /*Pilares*/
-.pilares__line{
+/* .pilares__line{
     flex-wrap: wrap;
 }
 .pilares__box{
     width: 43vw;
     height: 26vw;
-    margin-bottom: 5%;
-}
+    margin-bottom: 5%; */
+/* } */ 
 
 }
+}
 
+
+/* responsive de personajes desde celular, tablet y notebook */
+@media (min-width: 300px) and (max-width: 900px){
+/* personajes */
+.container_personajes {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  height: 40%;
+  width: 80%;
+}
+
+.container_imagenes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+}
+
+.nombre_imagen {
+  text-align-last: center;
+  font-size: 1rem;
+  margin-top: 5px;
+  flex-direction: column;
+  width: 50%;
+}
 }
