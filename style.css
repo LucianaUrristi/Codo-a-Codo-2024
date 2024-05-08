@@ -4,7 +4,6 @@
 --cor-de-fundo: #F6BBBE;
 --cor-de-link:  #49373B;;
 }
-
 body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
@@ -13,17 +12,13 @@ body {
     padding: 0;
     line-height: 1;    
 }
-
 ol, ul,li {
     list-style: none;
 }
-
 a, h2, h3, h4, p{
     text-decoration: none;
     color: var(--cor-de-link);
 }
-
-
 .pagina{
     display: flex;
     flex-direction: column;
@@ -33,9 +28,7 @@ a, h2, h3, h4, p{
     justify-content: center;
     align-items: center;   
 }
-
 /*Sección Menu*/
-
 section.menu{
     display: flex;
     margin-top: 2em;
@@ -65,50 +58,41 @@ header.menu__header{
     flex-flow: row wrap;
     gap: 1em;
 }
-
 /*Sección Title*/
-
 section.title{
     display: flex;
     margin: 32px 5%;
     max-width: 1440px;
 }
-
 .title__container{
     display: flex;
     flex-direction: column;
-    
+
     padding: 0;
     margin: 0;
 }
-
 .title__container{
     font-weight: bold;
     font-size: 52px;
     margin-top: auto;    
 }
-
 .title__subsection{
     font-size: 22px;
     font-weight: 100;
     
 }
-
 /*Sección Resumen*/
-
 section.resume{
     background-color: #FEF3F0;
     width: 100%;
     padding: 5% 0;
 }
-
 .resume__container{
     margin: 0 auto;
     max-width: 1440px;
     width: 90%;
     box-sizing: border-box;    
 }
-
 .resume__title{
     font-size: 32px;
     padding: 0;
@@ -118,116 +102,6 @@ section.resume{
 .resume__paragraph{
     font-size: 16px;
 }
-
-/*Sección Personajes principales*/
-
-/* section.pCaracters{
-    display: flex;
-    flex-direction: column;
-    margin-top: 32px;
-    width: 100%;
-    align-items: center;
-}
-
-.pCaracters__title{
-    text-align: center;
-    font-size: 32px;
-    margin-top: 0;
-    
-}
-
-.pCaracters__line{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 1440px;
-    width: 90%;
-    
-
-}
-
-.pCaracters__box{
-    width: 15vw;
-    height: 15vw;
-    gap: 10px;
-    background-color: #FEF3F0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    max-width: 30em;
-    max-height: 30em;
-}
-
-.pCaracters__box ul{
-    padding: 1em;
-    margin: 1em;
-}
-
-.pCaracters__box ul li {
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
-    
-}
-
-.pCaracters__img img{
-    width: 100px;
-    height: 150px;
-} */
-
-/*Sección Pilares*/
-
-/* section.pilares{
-    display: flex;
-    flex-direction: column;
-    margin-top: 32px;
-    align-items: center;
-    width: 100%;
-}
-
-.pilares__title{
-    text-align: center;
-    font-size: 32px;
-    margin-top: 0;
-}
-
-.pilares__line{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 1440px;
-    width: 90%;
-}
-
-.pilares__box{
-    width: 15vw;
-    height: 23vw;
-    gap: 10px;
-    background-color: #FEF3F0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    max-width: 14em;
-    max-height: 14em;
-}
-
-.pilares__box ul{
-    padding: 1em;
-    margin: 1em;
-}
-
-.pilares__box ul li {
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
-}
-
-.pilares__img img{
-    width: 100px;
-    height: 150px;
-} */
 
 /* personajes */
 .container_personajes {
@@ -280,7 +154,6 @@ section.formcontacto{
     width: 100%;
     padding: 5% 0;
 }
-
 .formcontacto__contacto{
     display: flex;
     margin: 0 auto;
@@ -289,17 +162,14 @@ section.formcontacto{
     width: 90%;
     box-sizing: border-box;
 }
-
 .formcontacto__text{
     margin: 0 0 0 3%;
     width: 100%;
 }
-
 .formcontacto__form{
     display: flex;
     flex-direction: column;    
 }
-
 .formcontacto__input{
     padding: 1% 0 3% 1%;
     margin: 2% 0;
@@ -331,7 +201,6 @@ section.formcontacto{
     font-size: 16px;
     font-weight: 100;
     margin: 1% 0;
-
 }
 .formcontacto__botao {
     display: block;
@@ -350,9 +219,7 @@ section.formcontacto{
     background-color: #d4886a;
     transform: translateY(-2px);
 }
-
 /*Footeer*/
-
 section.footer{
     display: flex;
     text-align: center;
@@ -363,13 +230,8 @@ section.footer{
     padding: 0;
     margin: 0;
 }
-
-
-
-
 /*Tablet*/
 @media (max-width: 768px) {
-
 /* Menú */
 .menu__list{
     display: none;
@@ -383,22 +245,17 @@ section.footer{
     font-weight: bold;
 }
 /*title*/
-
 .title__section{
     font-weight: bold;
     font-size: 22px;
     margin-top: auto;    
 }
-
 .title__subsection{
     font-size: 16px;
     font-weight: 100;
     
 }
-
-
 /*Resumen*/
-
 .resume__title{
     font-size: 22px;
     padding: 0;
@@ -408,7 +265,6 @@ section.footer{
     font-size: 14px;
 }
 /*Personajes Principales*/
-
 .pCaracters__line{
     flex-wrap: wrap;
 }
@@ -418,7 +274,6 @@ section.footer{
     margin-bottom: 5%;
     
 }
-
 /*Pilares*/
 .pilares__line{
     flex-wrap: wrap;
@@ -429,11 +284,8 @@ section.footer{
     height: 26vw;
     margin-bottom: 5%;
 }
-
 /*Mobile*/
-
 @media (max-width: 425px) {
-
 /*Menu*/
 .menu__list{
     display: none;
@@ -445,7 +297,6 @@ section.footer{
     display: flex;
     font-size: 14px;
 }
-
 /*Title*/
 section.title{
     display: flex;
@@ -456,7 +307,6 @@ section.title{
     display: flex;
     flex-direction: column
 }
-
 .title__container{
     display: flex;
     flex-direction: column;
@@ -469,16 +319,12 @@ section.title{
     font-size: 22px;
     margin-top: auto;    
 }
-
 .title__subsection{
     font-size: 14px;
     font-weight: 100;
     
 }
-
-
 /*Resumen*/
-
 .about__title{
     font-size: 22px;
     padding: 0;
@@ -488,26 +334,6 @@ section.title{
     font-size: 14px;
 }
 
-/*Personajes Principales*/
-/* .pCaracters__line{
-    flex-wrap: wrap;
-    
-}
-.pCaracters__box{
-    
-    width: 43vw;
-    height: 26vw;
-    margin-bottom: 5%;
-}
-/*Pilares*/
-/* .pilares__line{
-    flex-wrap: wrap;
-}
-.pilares__box{
-    width: 43vw;
-    height: 26vw;
-    margin-bottom: 5%; */
-/* } */ 
 
 }
 }
@@ -542,3 +368,4 @@ section.title{
   width: 50%;
 }
 }
+
