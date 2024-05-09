@@ -216,14 +216,34 @@ section.formcontacto {
 
 .formcontacto__contacto {
     display: flex;
-    margin: 0 auto;
+    margin: auto;
     max-width: 1440px;
     font-size: 16px;
     width: 90%;
     box-sizing: border-box;
 }
+<<<<<<< HEAD
 
 .formcontacto__text {
+=======
+.formcontacto__imagen{
+    filter: drop-shadow(10px 7px 10px black);
+    
+}
+@keyframes fadeOut{
+    from{
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+#chachamaru.fadeOut{
+    animation: fadeOut 1s forwards;
+}
+
+.formcontacto__text{
+>>>>>>> 172121551e8a89b37b9a98babb75a08873bc1ff9
     margin: 0 0 0 3%;
     width: 100%;
 }
