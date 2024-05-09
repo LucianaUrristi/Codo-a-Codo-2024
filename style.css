@@ -99,7 +99,7 @@ a:hover {
     flex: 1;
     justify-content: center;
     align-items: center;
-    font-size: 3em;
+    font-size: 3vw;
 }
 
 h1 {
@@ -121,7 +121,7 @@ h1 {
 
 .iframes iframe {
     height: 100px;
-    width: 300px;
+    width: 250px;
     border-radius: 5px;
 }
 
@@ -133,7 +133,7 @@ h1 {
 }
 
 .qr img {
-    height: 10.3em;
+    height: 15vh;
     filter: opacity(0.7);
 }
 
@@ -331,21 +331,28 @@ section.footer {
 
 /*Tablet*/
 @media (max-width: 768px) {
-    /* .title {
-        font-size: 2.3em;
+    /* Hero */
+    .title {
+        font-size: 4.5vw;
     }
-
     .qr {
         display: none;
     }
-
     .iframes {
         justify-content: center;
     }
-
     .iframes iframe {
-        height: 140px;
-    } */
+        height: 13vh;
+        width: 40vw;
+    }
+    .hero>header>nav>ul>li{
+        display: none;
+    }
+    .burger{
+        display: block;
+        height: 40px;
+        cursor: pointer;
+    }
 
     /*Resumen*/
     .resume__title {
@@ -365,27 +372,14 @@ section.footer {
         width: 80%;
     }
 }
-/* 
-@media (max-width: 700px) {
-    .title{
-        font-size: 1.4rem;
-    }
-    .iframeContainer{
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        gap: 0;
-    }
-    .iframes iframe {
-        width: 35vw;
-    }
-    .hero>header>nav>ul>li{
-        display: none;
-    }
-    .burger{
-        display: block;
-        height: 40px;
-        cursor: pointer;
+
+/*Mobile*/
+@media (max-width: 425px) {
+    /* Hero */
+    .title .sub{
+        font-size: 6.3vw;
+        margin-top: 7px;
+
     }
     video{
         display: none;
@@ -396,80 +390,16 @@ section.footer {
         background-repeat: no-repeat;
         background-size: cover;
     }
-} */
-
-/*Mobile*/
-@media (max-width: 425px) {
-    .title{
-        font-size: 1rem;
-    }
-    .logo{
-        width: 70px;
-    }
-    .burger{
-        height: 47px;
-    }
-    /*Menu*/
-    .menu__list {
-        display: none;
-    }
-
-    .menu__title {
-        font-size: 16px;
-    }
-
-    .nav-bar .menu__list__item__contato2 {
-        display: flex;
-        font-size: 14px;
-    }
-
-    /*Title*/
-    section.title {
-        display: flex;
-        margin: 32px 5% 32px 5%;
-
-    }
-
-    .title__div {
-        display: flex;
-        flex-direction: column
-    }
-
-    .title__container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
-    .title__section {
-        font-weight: bold;
-        font-size: 22px;
-        margin-top: auto;
-    }
-
-    .title__subsection {
-        font-size: 14px;
-        font-weight: 100;
-
-    }
-
     /*Resumen*/
     .about__title {
         font-size: 22px;
         padding: 0;
         margin: 0;
     }
-
     .about__paragraph {
         font-size: 14px;
     }
-
-
 }
-
-
 
 /* responsive de personajes desde celular, tablet y notebook */
 @media (min-width: 300px) and (max-width: 900px) {
