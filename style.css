@@ -222,6 +222,7 @@ section.formcontacto {
     width: 90%;
     box-sizing: border-box;
 }
+
 .formcontacto__imagen{
     filter: drop-shadow(10px 7px 10px black);
     
@@ -239,6 +240,7 @@ section.formcontacto {
 }
 
 .formcontacto__text{
+
     margin: 0 0 0 3%;
     width: 100%;
 }
@@ -317,8 +319,8 @@ section.footer {
 }
 
 /*Tablet*/
-@media (max-width: 992px) {
-    .title {
+@media (max-width: 768px) {
+    /* .title {
         font-size: 2.3em;
     }
 
@@ -332,7 +334,7 @@ section.footer {
 
     .iframes iframe {
         height: 140px;
-    }
+    } */
 
     /*Resumen*/
     .resume__title {
@@ -345,7 +347,7 @@ section.footer {
         font-size: 14px;
     }
 }
-
+/* 
 @media (max-width: 700px) {
     .title{
         font-size: 1.4rem;
@@ -376,7 +378,7 @@ section.footer {
         background-repeat: no-repeat;
         background-size: cover;
     }
-}
+} */
 
 /*Mobile*/
 @media (max-width: 425px) {
