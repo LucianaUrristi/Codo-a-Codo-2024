@@ -78,6 +78,7 @@ function hide(e){
     e.preventDefault();
     OPEN_NAV.classList.toggle("hidden");
     document.body.classList.toggle("no-scroll");
+    document.addEventListener("touchmove", preventScroll, { passive: false });
 }
 BURGER_ID.addEventListener("click", e =>{
     hide(e);
