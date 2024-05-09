@@ -4,7 +4,7 @@
     --cor-de-fundo: #F6BBBE;
     --cor-de-link: #49373B;
     --red: rgba(209, 47, 47, 0.884);
-    ;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -65,9 +65,10 @@ p {
     width: 6em;
 }
 
-#burger{
+#burger {
     display: none;
 }
+
 header nav ul {
     display: flex;
     gap: 20px;
@@ -94,6 +95,7 @@ a:hover {
     transform: scale(1.07);
     color: var(--red);
 }
+
 .overlay {
     position: fixed;
     width: 100%;
@@ -105,12 +107,15 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
-.hidden{
+
+.hidden {
     display: none;
 }
-.no-scroll{
+
+.no-scroll {
     overflow: hidden;
 }
+
 .overlay-bg {
     position: absolute;
     top: 0;
@@ -128,10 +133,12 @@ a:hover {
     gap: 1em;
     z-index: 1;
 }
-.overlay-content a{
+
+.overlay-content a {
     text-align: center;
 }
-.overlay p{
+
+.overlay p {
     color: rgb(238, 229, 229);
     position: absolute;
     right: 0;
@@ -140,7 +147,8 @@ a:hover {
     font-size: 2.7em;
     z-index: 1;
 }
-.overlay p:hover{
+
+.overlay p:hover {
     transform: scale(1.4);
     color: var(--red);
 }
@@ -186,6 +194,23 @@ h1 {
 .qr img {
     height: 15vh;
     filter: opacity(0.7);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #dbdbdd;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--red);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(248, 41, 41, 0.884);
+    ;
 }
 
 /*Sección Resumen*/
@@ -275,23 +300,26 @@ section.formcontacto {
     align-items: center;
 }
 
-.formcontacto__imagen{
+.formcontacto__imagen {
     filter: drop-shadow(10px 7px 10px black);
-    
+
 }
-@keyframes fadeOut{
-    from{
+
+@keyframes fadeOut {
+    from {
         opacity: 1;
     }
+
     to {
         opacity: 0;
     }
 }
-#chachamaru.fadeOut{
+
+#chachamaru.fadeOut {
     animation: fadeOut 1s forwards;
 }
 
-.formcontacto__text{
+.formcontacto__text {
 
     margin: 0 0 0 3%;
     width: 100%;
@@ -362,7 +390,7 @@ section.formcontacto {
     color: red;
 }
 
-#chachamaru__image{
+#chachamaru__image {
     height: 100%;
     width: 100%;
 }
@@ -382,24 +410,30 @@ section.footer {
 
 /*Tablet*/
 @media (max-width: 768px) {
+
     /* Hero */
     .title {
         font-size: 4.5vw;
     }
+
     .qr {
         display: none;
     }
+
     .iframes {
         justify-content: center;
     }
+
     .iframes iframe {
         height: 13vh;
         width: 40vw;
     }
-    .hero>header>nav>ul>li{
+
+    .hero>header>nav>ul>li {
         display: none;
     }
-    #burger{
+
+    #burger {
         display: block;
         height: 40px;
         cursor: pointer;
@@ -418,7 +452,7 @@ section.footer {
 
     /*Form contacto*/
 
-    #chachamaru__image{
+    #chachamaru__image {
         height: 80%;
         width: 80%;
     }
@@ -426,29 +460,35 @@ section.footer {
 
 /*Mobile*/
 @media (max-width: 425px) {
+
     /* Hero */
-    .title .sub{
+    .title .sub {
         font-size: 6.3vw;
         margin-top: 7px;
     }
-    video{
+
+    video {
         display: none;
     }
-    .hero{
+
+    .hero {
         background-image: url(assets/img/mobile.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     .overlay-content {
         font-size: 2em;
     }
+
     /*Resumen*/
     .about__title {
         font-size: 22px;
         padding: 0;
         margin: 0;
     }
+
     .about__paragraph {
         font-size: 14px;
     }
