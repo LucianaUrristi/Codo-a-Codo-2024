@@ -221,6 +221,7 @@ section.formcontacto {
     font-size: 16px;
     width: 90%;
     box-sizing: border-box;
+    align-items: center;
 }
 
 .formcontacto__imagen{
@@ -305,6 +306,16 @@ section.formcontacto {
     transform: translateY(-2px);
 }
 
+.error {
+    text-align: star;
+    color: red;
+}
+
+#chachamaru__image{
+    height: 100%;
+    width: 100%;
+}
+
 /*Footeer*/
 section.footer {
     display: flex;
@@ -345,6 +356,13 @@ section.footer {
 
     .resume__paragraph {
         font-size: 14px;
+    }
+
+    /*Form contacto*/
+
+    #chachamaru__image{
+        height: 80%;
+        width: 80%;
     }
 }
 /* 
