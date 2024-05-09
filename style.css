@@ -108,6 +108,9 @@ a:hover {
 .hidden{
     display: none;
 }
+.no-scroll{
+    overflow: hidden;
+}
 .overlay-bg {
     position: absolute;
     top: 0;

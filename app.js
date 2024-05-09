@@ -77,6 +77,7 @@ const OPEN_NAV = document.getElementById("myNav");
 function hide(e){
     e.preventDefault();
     OPEN_NAV.classList.toggle("hidden");
+    document.body.classList.toggle("no-scroll");
 }
 BURGER_ID.addEventListener("click", e =>{
     hide(e);
