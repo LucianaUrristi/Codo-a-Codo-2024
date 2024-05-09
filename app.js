@@ -33,4 +33,17 @@ document.addEventListener("DOMContentLoaded", function(){
             }
         });
     });
+
 });
+
+function difuminarImagen(event) {
+        event.preventDefault();
+        let imagenChachamaru = document.getElementById('chachamaru');
+        imagenChachamaru.classList.add('fadeOut'); 
+
+        setTimeout(function() {
+            document.getElementById('contacto').reset();
+        }, {once: true});
+
+        // NO FUNCIONA EL RESETEO AUN
+};

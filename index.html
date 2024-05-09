@@ -144,7 +144,7 @@
         <section class="formcontacto" id="contacto">
             <div class="formcontacto__contacto">
               <div class="formcontacto__imagen">
-                <img src="/assets/img/chachamaru.png" alt="chachamaru" />
+                <img id="chachamaru" src="/assets/img/chachamaru.png" alt="chachamaru" />
               </div>
 
                 <div class="formcontacto__text">
@@ -162,17 +162,13 @@
                           <option value="noche">En la noche</option>
                         </select> 
                         <br>
-                        <label class="formcontacto__checkbox" for="ageRange">Selecciona tu rango de edad:</label><br>
+                        <label class="formcontacto__checkbox" for="ageRange" id="ageRange">Selecciona tu rango de edad:</label><br>
                           <label><input type="checkbox" name="ageRange" value="13-18">13 a 18</label><br>
                           <label><input type="checkbox" name="ageRange" value="19-25">19 a 25</label><br>
                           <label><input type="checkbox" name="ageRange" value="26-30">26 a 30</label><br>
                           <label><input type="checkbox" name="ageRange" value="30+">30+</label><br>
                             
-                            
-                          
-                          
-
-                        <button type="submit" class="formcontacto__botao">Enviar</button>
+                        <button type="submit" class="formcontacto__botao" onclick="difuminarImagen(event)">Enviar</button>
                     </form>
                 </div>
             </div>
