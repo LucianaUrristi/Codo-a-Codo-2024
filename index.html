@@ -143,6 +143,9 @@
         <!-- Sección de Contacto -->
         <section class="formcontacto" id="contacto">
             <div class="formcontacto__contacto">
+              <div class="formcontacto__imagen">
+                <img src="/assets/img/chachamaru.png" alt="chachamaru" />
+              </div>
 
                 <div class="formcontacto__text">
                     <h2 class="formcontacto__title">Contacto</h2>
@@ -151,10 +154,24 @@
                         necesitas. </h3>
                     <form class="formcontacto__form" name="form">
                         <input class="formcontacto__input" type="text" name="nombre" placeholder="Nombre">
+                        <input class="formcontacto__input" type="text" name="apellido" placeholder="Apellido">
                         <input class="formcontacto__input" type="email" name="email" placeholder="E-mail">
-                        <input class="formcontacto__input" type="text" name="asunto" placeholder="Asunto">
-                        <!-- <textarea class="formcontacto__textarea" rows="5" cols="40" id="mensagem" name="mensaje"
-                        placeholder="Mensaje"></textarea> -->
+                        <label><select class="formcontacto__select">¿En qué momento del día preferís que te lleguen nuestros mensajes?</label>
+                          <option value="manana">En la mañana</option>
+                          <option value="tarde">En la tarde</option>
+                          <option value="noche">En la noche</option>
+                        </select> 
+                        <br>
+                        <label class="formcontacto__checkbox" for="ageRange">Selecciona tu rango de edad:</label><br>
+                          <label><input type="checkbox" name="ageRange" value="13-18">13 a 18</label><br>
+                          <label><input type="checkbox" name="ageRange" value="19-25">19 a 25</label><br>
+                          <label><input type="checkbox" name="ageRange" value="26-30">26 a 30</label><br>
+                          <label><input type="checkbox" name="ageRange" value="30+">30+</label><br>
+                            
+                            
+                          
+                          
+
                         <button type="submit" class="formcontacto__botao">Enviar</button>
                     </form>
                 </div>
