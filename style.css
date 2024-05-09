@@ -222,10 +222,6 @@ section.formcontacto {
     width: 90%;
     box-sizing: border-box;
 }
-<<<<<<< HEAD
-
-.formcontacto__text {
-=======
 .formcontacto__imagen{
     filter: drop-shadow(10px 7px 10px black);
     
@@ -243,7 +239,6 @@ section.formcontacto {
 }
 
 .formcontacto__text{
->>>>>>> 172121551e8a89b37b9a98babb75a08873bc1ff9
     margin: 0 0 0 3%;
     width: 100%;
 }
@@ -348,28 +343,6 @@ section.footer {
 
     .resume__paragraph {
         font-size: 14px;
-    }
-
-    /*Personajes Principales*/
-    .pCaracters__line {
-        flex-wrap: wrap;
-    }
-
-    .pCaracters__box {
-        width: 26vw;
-        height: 26vw;
-        margin-bottom: 5%;
-    }
-
-    /*Pilares*/
-    .pilares__line {
-        flex-wrap: wrap;
-    }
-
-    .pilares__box {
-        width: 26vw;
-        height: 26vw;
-        margin-bottom: 5%;
     }
 }
 
