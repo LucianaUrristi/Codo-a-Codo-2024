@@ -74,15 +74,22 @@ const BURGER_ID = document.getElementById("burger");
 const CLOSE_NAV = document.getElementById("close-nav");
 const OPEN_NAV = document.getElementById("myNav");
 
-function hide(e){
+function hide(e) {
     e.preventDefault();
     OPEN_NAV.classList.toggle("hidden");
     document.body.classList.toggle("no-scroll");
     document.addEventListener("touchmove", preventScroll, { passive: false });
 }
-BURGER_ID.addEventListener("click", e =>{
+BURGER_ID.addEventListener("click", e => {
     hide(e);
 })
-CLOSE_NAV.addEventListener("click", e =>{
+CLOSE_NAV.addEventListener("click", e => {
     hide(e);
 })
+
+// vvvvvvvvv Loader vvvvvvvvv
+
+window.addEventListener("load", () => {
+        const loader = document.querySelector('.loader');
+        loader.classList.add('hidden');
+});
