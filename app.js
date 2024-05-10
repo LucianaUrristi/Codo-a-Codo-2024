@@ -86,10 +86,3 @@ BURGER_ID.addEventListener("click", e => {
 CLOSE_NAV.addEventListener("click", e => {
     hide(e);
 })
-
-// vvvvvvvvv Loader vvvvvvvvv
-
-window.addEventListener("load", () => {
-        const loader = document.querySelector('.loader');
-        loader.classList.add('hidden');
-});
