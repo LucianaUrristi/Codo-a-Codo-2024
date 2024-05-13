@@ -86,3 +86,4 @@ BURGER_ID.addEventListener("click", e =>{
 CLOSE_NAV.addEventListener("click", e =>{
     hide(e);
 })
+
