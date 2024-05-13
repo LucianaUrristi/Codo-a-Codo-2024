@@ -27,11 +27,10 @@ a,
 h2,
 h3,
 h4,
-p {
+p, label {
     text-decoration: none;
     color: var(--cor-de-link);
     cursor: pointer;
-
 }
 
 .pagina {
@@ -229,7 +228,7 @@ section.resume {
 }
 
 .resume__title {
-    font-size: 32px;
+    font-size: 24px;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -288,14 +287,13 @@ section.resume {
 section.formcontacto {
     background-color: #9DAE7D;
     width: 100%;
-    padding: 5% 0;
+    padding: 2% 0;
 }
 
 .formcontacto__contacto {
     display: flex;
     margin: auto;
     max-width: 1440px;
-    font-size: 16px;
     width: 90%;
     box-sizing: border-box;
     align-items: center;
@@ -303,28 +301,22 @@ section.formcontacto {
 
 .formcontacto__imagen {
     filter: drop-shadow(10px 7px 10px black);
-
 }
+
 
 @keyframes fadeOut {
     from {
         opacity: 1;
     }
-
     to {
         opacity: 0;
     }
 }
 
-#chachamaru.fadeOut {
+.formcontacto__imagen #chachamaru__image.fadeOut{
     animation: fadeOut 1s forwards;
 }
 
-.formcontacto__text {
-
-    margin: 0 0 0 3%;
-    width: 100%;
-}
 
 .formcontacto__form {
     display: flex;
@@ -332,7 +324,7 @@ section.formcontacto {
 }
 
 .formcontacto__input {
-    padding: 1% 0 3% 1%;
+    padding: 2%;
     margin: 2% 0;
     border: none;
     outline: none;
@@ -340,22 +332,21 @@ section.formcontacto {
     border-radius: 4px;
     max-width: 1440px;
     width: 90%;
+    font-size: 16px;    
+}
+
+.formcontacto__select{
+    width: 25%;
 }
 
 .formcontacto__input:focus {
-    border: 2px solid #C56742;
+    border: 2px solid #7f8d65;
 }
 
-.formcontacto__textarea {
-    padding: 1% 0 3% 1%;
-    margin: 2% 0;
-    border: none;
-    outline: none;
-    font-family: 'Raleway';
-    resize: none;
-    border-radius: 4px;
-    max-width: 1440px;
-    width: 90%;
+.checkbox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
 }
 
 .formcontacto__textarea:focus {
@@ -368,21 +359,21 @@ section.formcontacto {
     margin: 1% 0;
 }
 
-.formcontacto__botao {
+.formcontacto__button {
     display: block;
     margin-right: auto;
     padding: 15px 30px;
     border: none;
-    background-color: #C56742;
-    color: white;
+    background-color: #F6BBBE;
+    color: #C56742;
     border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
     margin-top: 1.5%;
 }
 
-.formcontacto__botao:hover {
-    background-color: #d4886a;
+.formcontacto__button:hover {
+    background-color: #d2898e;
     transform: translateY(-2px);
 }
 
@@ -395,6 +386,7 @@ section.formcontacto {
     height: 100%;
     width: 100%;
 }
+
 
 /*Footeer*/
 section.footer {
@@ -457,6 +449,32 @@ section.footer {
         height: 80%;
         width: 80%;
     }
+    .formcontacto__title{
+        margin: 3% 0;
+    }
+
+    .formcontacto__turno, .formcontacto__subtext, .formcontacto__checkbox{
+        font-size: 14px;
+    }
+
+    .formcontacto__input {
+        width: 80%;
+        font-size: 14px;
+    }
+    
+    .formcontacto__select{
+        width: 50%;
+    }
+    
+    .checkbox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .formcontacto__button {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
 }
 
 /*Mobile*/
@@ -493,6 +511,46 @@ section.footer {
     .about__paragraph {
         font-size: 14px;
     }
+
+    /*Form contacto*/
+
+    #chachamaru__image {
+        display: none;
+    }
+    
+    .formcontacto__title{
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+        margin: 1%;
+        font-size: 24px;
+    }
+
+    .formcontacto__turno, .formcontacto__subtext, .formcontacto__checkbox{
+        font-size: 14px;
+    }
+
+    .formcontacto__input {
+        width: 80%;
+        font-size: 12px;
+    }
+    
+    .formcontacto__select{
+        width: 40%;
+    }
+    
+    .checkbox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .formcontacto__button {
+        padding: 10px 25px;
+        font-size: 14px;
+        margin: auto;
+        
+    }
+    
 }
 
 /* responsive de personajes desde celular, tablet y notebook */

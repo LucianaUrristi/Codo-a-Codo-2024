@@ -68,7 +68,7 @@
     <!-- Sección de Resumen de la historia -->
     <section class="resume" id="resume">
       <div class="resume__container">
-        <h3 class="resume__title">Resumen</h3>
+        <h3 class="resume__title">RESUMEN</h3>
         <p class="resume__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempora iusto,
           nam tempore velit beatae iure aliquid qui. Nobis rerum corrupti corporis totam exercitationem
           officiis odit at accusamus voluptatibus optio?</p>
@@ -158,31 +158,36 @@
         <section class="formcontacto" id="contacto">
             <div class="formcontacto__contacto">
               <div class="formcontacto__imagen">
-                <img id="chachamaru__image" src="assets/img/chachamaru.webp" alt="chachamaru" />
+                <img id="chachamaru__image" name="chachamaru__image" src="assets/img/chachamaru.webp" alt="chachamaru" />
               </div>
 
                 <div class="formcontacto__text">
-                    <h2 class="formcontacto__title">Contacto</h2>
+                    <h2 class="formcontacto__title">CONTACTO</h2>
                     <h3 class="formcontacto__subtext">Subscribite a nuestro Newsletter</h3>
                     <h3 class="formcontacto__subtext">Complete el siguiente formulario y te enviaremos toda la info que
                         necesitas. </h3>
-                    <form class="formcontacto__form" name="form">
-                        <input class="formcontacto__input" type="text" name="nombre" placeholder="Nombre *">
-                        <input class="formcontacto__input" type="text" name="apellido" placeholder="Apellido *">
-                        <input class="formcontacto__input" type="email" name="email" placeholder="E-mail *">
-                        <label><select class="formcontacto__select" name="turno">¿En qué momento del día preferís que te lleguen nuestros mensajes?</label>
-                          <option value="manana">En la mañana</option>
-                          <option value="tarde">En la tarde</option>
-                          <option value="noche">En la noche</option>
+                    <form class="formcontacto__form" id="formcontacto__form" name="formcontacto__form">
+                        <input name="nombre" id="nombre" autocomplete="on" required type="text" class="formcontacto__input" placeholder="Nombre *"/>
+                        <input name="apellido" id="apellido" autocomplete="on" required type="text" class="formcontacto__input" placeholder="Apellido *"/>
+                        <input name="email" id="email" autocomplete="on" required type="email" class="formcontacto__input" placeholder="E-mail *"/>
+                        <br>
+                        <h3 class="formcontacto__turno">¿En qué momento del día preferís 
+                          que te lleguen nuestros mensajes?</h3><br>
+                        <select class="formcontacto__select" id="formcontacto__select" name="formcontacto__select" autocomplete="off" >
+                          <option id="option__manana" value="manana">En la mañana</option>
+                          <option id="option__tarde" value="tarde">En la tarde</option>
+                          <option id="option__noche" value="noche">En la noche</option>
                         </select>
                         <br>
-                        <label class="formcontacto__checkbox" for="ageRange">Selecciona tu rango de edad:</label><br>
-                          <label><input type="checkbox" name="ageRange" value="13-18">13 a 18</label><br>
-                          <label><input type="checkbox" name="ageRange" value="19-25">19 a 25</label><br>
-                          <label><input type="checkbox" name="ageRange" value="26-30">26 a 30</label><br>
-                          <label><input type="checkbox" name="ageRange" value="30+">30+</label><br>
+                        <h3 id="ageRange" class="formcontacto__checkbox">Selecciona tu rango de edad:</h3><br>
+                        <div class="checkbox" id="ageRanges" name="ageRanges">
+                          <label for="checkbox13-18"><input type="checkbox" id="checkbox13-18" name="checkbox13-18" value="13-18">13 a 18</label>
+                          <label for="checkbox19-25"><input type="checkbox" id="checkbox19-25" name="checkbox19-25" value="19-25">19 a 25</label>
+                          <label for="checkbox26-30"><input type="checkbox" id="checkbox26-30" name="checkbox26-30" value="26-30">26 a 30</label>
+                          <label for="checkbox30"><input type="checkbox" id="checkbox30" name="checkbox30" value="30+">30+</label>
+                        </div><br>
                           <div class="error"></div>
-                        <button type="submit" class="formcontacto__botao">Enviar</button>
+                        <button id="formcontacto__button" name="formcontacto__button" type="submit" class="formcontacto__button">Enviar</button>
                     </form>
                     
                 </div>
