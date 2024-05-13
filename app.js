@@ -48,6 +48,14 @@ form.addEventListener("submit", (event) => {
         });
     }
     });
+    // const cat = document.getElementById('chachamaru');
+    // const meow = document.getElementById('meow');
+    // e.preventDefault();
+    // cat.classList.add('fade-out');
+    // cat.addEventListener("animationend",()=>{
+    //     cat.classList.add("hidden");
+    //     meow.classList.add("block");    
+    // });
 });
 
 function showError(message) {
@@ -59,7 +67,7 @@ function showError(message) {
     }, 2000);
     }
 });
-// function difuminarImagen(event) {
+// function difuminarImagen(e) {
 //     event.preventDefault();
 //     let imagenChachamaru = document.getElementById('chachamaru__image');
 //     imagenChachamaru.classList.add('fadeOut');
@@ -71,7 +79,21 @@ function showError(message) {
 //         document.querySelector('.formcontacto__botao').style.backgroundColor = '#F6BBBE'; // Restablecer el color de fondo del botón
 //         document.querySelector('.formcontacto__botao').style.color = '#C56742'; // Restablecer el color del texto del botón
 //     }, 2000);
-// };
+//};
+
+
+// const form = document.getElementById('form_id');
+
+// form.addEventListener('submit', e =>{
+//     const cat = document.getElementById('chachamaru');
+//     const meow = document.getElementById('meow');
+//     e.preventDefault();
+//     cat.classList.add('fade-out');
+//     cat.addEventListener("animationend",()=>{
+//         cat.classList.add("hidden");
+//         meow.classList.add("block");
+//     });
+// });
 
 // vvvvvvvvv Menú hamburguesa vvvvvvvvv
 

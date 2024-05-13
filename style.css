@@ -321,23 +321,44 @@ section.formcontacto {
 }
 
 .formcontacto__imagen {
-    filter: drop-shadow(10px 7px 10px black);
+  filter: drop-shadow(10px 7px 10px black);
+  width: 800px;
+  height: 500px;
 }
 
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
+.chachamaru__image {
+  height: 100%;
+  width: 90%;
 }
 
-.formcontacto__imagen #chachamaru__image.fadeOut{
-    animation: fadeOut 1s forwards;
+.fade-out {
+  animation: fade-out 1s ease-out forwards;
 }
 
+@keyframes fade-out {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+.hidden{
+  display: none;
+}
+.block{
+  display: block;
+  animation: fade-in 1s ease-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
 
 .formcontacto__form {
   display: flex;
@@ -417,7 +438,7 @@ section.footer {
   margin: 0.5%;
 }
 
-.footer__rodape p {
+.footer__rodape h6 {
   padding: 0;
   margin: 0;
 }
@@ -448,6 +469,8 @@ section.footer {
   .overlay-content {
     font-size: 2em;
   }
+
+  
 
   /* historia */
 
