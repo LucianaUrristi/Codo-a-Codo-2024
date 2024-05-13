@@ -1,11 +1,11 @@
 :root {
   /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
 
-  --cor-de-fundo: #F6BBBE;
-  --cor-de-link: #49373B;
-  --red: rgba(209, 47, 47, 0.884);
-    scroll-behavior: smooth;     
-    
+    --cor-de-fundo: #F6BBBE;
+    --cor-de-link: #49373B;
+    --red: rgba(209, 47, 47, 0.884);
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -28,11 +28,10 @@ a,
 h2,
 h3,
 h4,
-p {
-  text-decoration: none;
-  color: var(--cor-de-link);
-  cursor: pointer;
-
+p, label {
+    text-decoration: none;
+    color: var(--cor-de-link);
+    cursor: pointer;
 }
 
 .pagina {
@@ -68,7 +67,7 @@ p {
 }
 
 #burger {
-  display: none;
+    display: none;
 }
 
 header nav ul {
@@ -116,21 +115,21 @@ a:hover {
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 .no-scroll {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .overlay-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(assets/img/pattern.jpg);
-  filter: brightness(.3) contrast(90%) saturate(250%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/img/pattern.webp);
+    filter: brightness(.3) contrast(90%) saturate(250%);
 }
 
 .overlay-content {
@@ -142,22 +141,22 @@ a:hover {
 }
 
 .overlay-content a {
-  text-align: center;
+    text-align: center;
 }
 
 .overlay p {
-  color: rgb(238, 229, 229);
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin: 2vw 3vw 0 0;
-  font-size: 2.7em;
-  z-index: 1;
+    color: rgb(238, 229, 229);
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 2vw 3vw 0 0;
+    font-size: 2.7em;
+    z-index: 1;
 }
 
 .overlay p:hover {
-  transform: scale(1.4);
-  color: var(--red);
+    transform: scale(1.4);
+    color: var(--red);
 }
 
 .title {
@@ -201,6 +200,23 @@ h1 {
 .qr img {
   height: 15vh;
   filter: opacity(0.7);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #dbdbdd;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--red);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(248, 41, 41, 0.884);
+    ;
 }
 
 /*Sección Resumen*/
@@ -289,47 +305,39 @@ pointer-events: none;
 }
 
 /*Contacto*/
-.formcontacto {
-  background-color: #9DAE7D;
-  width: 100%;
-  pointer-events: none;
-  padding-bottom: 80px;
+section.formcontacto {
+    background-color: #9DAE7D;
+    width: 100%;
+    padding: 2% 0;
 }
 
 .formcontacto__contacto {
-  display: flex;
-  margin: auto;
-  max-width: 1440px;
-  font-size: 16px;
-  width: 90%;
-  box-sizing: border-box;
-  align-items: center;
+    display: flex;
+    margin: auto;
+    max-width: 1440px;
+    width: 90%;
+    box-sizing: border-box;
+    align-items: center;
 }
 
 .formcontacto__imagen {
-  filter: drop-shadow(10px 7px 10px black);
-
+    filter: drop-shadow(10px 7px 10px black);
 }
+
 
 @keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
-#chachamaru.fadeOut {
-  animation: fadeOut 1s forwards;
+.formcontacto__imagen #chachamaru__image.fadeOut{
+    animation: fadeOut 1s forwards;
 }
 
-.formcontacto__text {
-
-  margin: 0 0 0 3%;
-  width: 100%;
-}
 
 .formcontacto__form {
   display: flex;
@@ -337,30 +345,29 @@ pointer-events: none;
 }
 
 .formcontacto__input {
-  padding: 1% 0 3% 1%;
-  margin: 2% 0;
-  border: none;
-  outline: none;
-  font-family: 'Raleway';
-  border-radius: 4px;
-  max-width: 1440px;
-  width: 90%;
+    padding: 2%;
+    margin: 2% 0;
+    border: none;
+    outline: none;
+    font-family: 'Raleway';
+    border-radius: 4px;
+    max-width: 1440px;
+    width: 90%;
+    font-size: 16px;    
+}
+
+.formcontacto__select{
+    width: 25%;
 }
 
 .formcontacto__input:focus {
-  border: 2px solid #C56742;
+    border: 2px solid #7f8d65;
 }
 
-.formcontacto__textarea {
-  padding: 1% 0 3% 1%;
-  margin: 2% 0;
-  border: none;
-  outline: none;
-  font-family: 'Raleway';
-  resize: none;
-  border-radius: 4px;
-  max-width: 1440px;
-  width: 90%;
+.checkbox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
 }
 
 .formcontacto__textarea:focus {
@@ -373,22 +380,22 @@ pointer-events: none;
   margin: 1% 0;
 }
 
-.formcontacto__botao {
-  display: block;
-  margin-right: auto;
-  padding: 15px 30px;
-  border: none;
-  background-color: #C56742;
-  color: white;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 1.5%;
+.formcontacto__button {
+    display: block;
+    margin-right: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: #F6BBBE;
+    color: #C56742;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 1.5%;
 }
 
-.formcontacto__botao:hover {
-  background-color: #d4886a;
-  transform: translateY(-2px);
+.formcontacto__button:hover {
+    background-color: #d2898e;
+    transform: translateY(-2px);
 }
 
 .error {
@@ -397,9 +404,10 @@ pointer-events: none;
 }
 
 #chachamaru__image {
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
+
 
 /*Footeer*/
 section.footer {
@@ -415,7 +423,6 @@ section.footer {
 }
 
 /*                 RESPONSIVE          */
-
 
 /*Mobile*/
 @media (max-width: 425px) {
@@ -492,12 +499,45 @@ section.footer {
     flex-direction: column;
     width: 50%;
   }
+    /*Form contacto*/
 
-  .formcontacto {
-    background-color: #9DAE7D;
-    width: 100%;
-  }
+    #chachamaru__image {
+        display: none;
+    }
+    
+    .formcontacto__title{
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+        margin: 1%;
+        font-size: 24px;
+    }
 
+    .formcontacto__turno, .formcontacto__subtext, .formcontacto__checkbox{
+        font-size: 14px;
+    }
+
+    .formcontacto__input {
+        width: 80%;
+        font-size: 12px;
+    }
+    
+    .formcontacto__select{
+        width: 40%;
+    }
+    
+    .checkbox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .formcontacto__button {
+        padding: 10px 25px;
+        font-size: 14px;
+        margin: auto;
+        
+    }
+    
 }
 
 
@@ -592,10 +632,39 @@ section.footer {
     width: 50%;
   }
 
-  /*Form contacto*/
 
-  #chachamaru__image {
-    height: 80%;
-    width: 80%;
-  }
+/* formulario */
+#chachamaru__image {
+  height: 80%;
+  width: 80%;
+}
+
+.formcontacto__title {
+  margin: 3% 0;
+}
+
+.formcontacto__turno,
+.formcontacto__subtext,
+.formcontacto__checkbox {
+  font-size: 14px;
+}
+
+.formcontacto__input {
+  width: 80%;
+  font-size: 14px;
+}
+
+.formcontacto__select {
+  width: 50%;
+}
+
+.checkbox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.formcontacto__button {
+  padding: 10px 25px;
+  font-size: 14px;
+}
 }

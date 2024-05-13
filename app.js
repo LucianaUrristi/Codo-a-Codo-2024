@@ -1,72 +1,77 @@
-// const users = [];
+document.addEventListener("DOMContentLoaded", () => {
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+    const form = document.querySelector(".formcontacto__form");
 
-// document.addEventListener("DOMContentLoaded", () => {
-//     users = JSON.parse(localStorage.getItem("users"));
-//     const form = document.querySelector('.formcontacto__form');
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const nombre = form.querySelector('input[name="nombre"]').value.trim();
+    const apellido = form.querySelector('input[name="apellido"]').value.trim();
+    const email = form.querySelector('input[name="email"]').value.trim();
+    const turno = form.querySelector('select[name="turno"]').value;
+    const ageRanges = form.querySelectorAll('input[name="ageRange"]:checked');
 
-//     form.addEventListener('submit', (event) => {
-//         event.preventDefault();
-//         const user = {
-//             nombre: form.querySelector('input[name="nombre"]').value.trim(),
-//             apellido: form.querySelector('input[name="apellido"]').value.trim(),
-//             email: form.querySelector('input[name="email"]').value.trim(),
-//             turno: form.querySelector('select[name="turno"]'),
-//             ageRange: form.querySelector('input[name="ageRange"]:checked'),
-//         };
-//         users.push(user);
+    if (
+        nombre === "" ||
+        apellido === "" ||
+        email === "" ||
+        ageRanges.length === 0
+    ) {
+    showError("Por favor, completa los campos obligatorios.");
+        return;
+    }
 
+    const user = {
+        nombre,
+        apellido,
+        email,
+        turno,
+        ageRange: Array.from(ageRanges).map((checkbox) => checkbox.value),
+    };
+    users.push(user);
 
-//         // const nombre = form.querySelector('input[name="nombre"]').value.trim();
-//         // const apellido = form.querySelector('input[name="apellido"]').value.trim();
-//         // const email = form.querySelector('input[name="email"]').value.trim();
-//         // const ageRange = form.querySelectorAll('input[name="ageRange"]:checked');
+    localStorage.setItem("users", JSON.stringify(users));
+    form.reset();
+    });
 
-//         if (nombre === '' || apellido === '' || email === '' || ageRange.length === 0) {
-//             const error = document.querySelector(".error");
-//             error.textContent = "Por favor, completa los campos obligatorios."; //mensaje de error.
+    const checkboxes = form.querySelectorAll('input[name="ageRange"]');
+    checkboxes.forEach(function (checkbox) {
+    checkbox.addEventListener("change", function () {
+    if (this.checked) {
+        checkboxes.forEach(function (otherCheckbox) {
+        if (otherCheckbox !== checkbox) {
+            otherCheckbox.disabled = true;
+        }
+        });
+    } else {
+        checkboxes.forEach(function (otherCheckbox) {
+        otherCheckbox.disabled = false;
+        });
+    }
+    });
+});
 
-//             setTimeout(() => {        // para que desaparezca el mensaje a los 2 segundos.
-//                 error.textContent = "";
-//             }, 2000);
-//             return;
-//         }
-//         //localStorage.setItem(users, JSON.stringify("users"));
+function showError(message) {
+    const error = document.querySelector(".error");
+    error.textContent = message;
 
-//         form.reset();
-//     });
-
-//     const checkboxes = form.querySelectorAll('input[name="ageRange"]');
-//     checkboxes.forEach(function (checkbox) {
-//         checkbox.addEventListener('change', function () {
-//             if (this.checked) {
-//                 checkboxes.forEach(function (otherCheckbox) {
-//                     if (otherCheckbox !== checkbox) {
-//                         otherCheckbox.disabled = true;
-//                     }
-//                 });
-//             } else {
-//                 checkboxes.forEach(function (otherCheckbox) {
-//                     otherCheckbox.disabled = false;
-//                 });
-//             }
-//         });
-//     });
-
-// });
-
+    setTimeout(() => {
+    error.textContent = "";
+    }, 2000);
+    }
+});
 // function difuminarImagen(event) {
 //     event.preventDefault();
-//     let imagenChachamaru = document.getElementById('chachamaru');
+//     let imagenChachamaru = document.getElementById('chachamaru__image');
 //     imagenChachamaru.classList.add('fadeOut');
+//     console.log(imagenChachamaru.classList);
 
 //     setTimeout(function () {
-//         document.getElementById('contacto').reset();
-//     }, { once: true });
-
-//     // NO FUNCIONA EL RESETEO AUN
+//         imagenChachamaru.classList.remove('fadeOut');
+//         document.querySelector('.formcontacto__form').reset();
+//         document.querySelector('.formcontacto__botao').style.backgroundColor = '#F6BBBE'; // Restablecer el color de fondo del botón
+//         document.querySelector('.formcontacto__botao').style.color = '#C56742'; // Restablecer el color del texto del botón
+//     }, 2000);
 // };
-
-
 
 // vvvvvvvvv Menú hamburguesa vvvvvvvvv
 
@@ -74,16 +79,15 @@ const BURGER_ID = document.getElementById("burger");
 const CLOSE_NAV = document.getElementById("close-nav");
 const OPEN_NAV = document.getElementById("myNav");
 
-function hide(e){
+function hide(e) {
     e.preventDefault();
     OPEN_NAV.classList.toggle("hidden");
     document.body.classList.toggle("no-scroll");
     document.addEventListener("touchmove", preventScroll, { passive: false });
 }
-BURGER_ID.addEventListener("click", e =>{
+BURGER_ID.addEventListener("click", (e) => {
     hide(e);
-})
-CLOSE_NAV.addEventListener("click", e =>{
+});
+CLOSE_NAV.addEventListener("click", (e) => {
     hide(e);
-})
-
+});
