@@ -29,10 +29,8 @@
             <li class="menu__list__item"><a href="#personajes">CHARACTERS</a></li>
             <li class="menu__list__item"><a href="#contacto">CONTACT US</a></li>
           </ul>
-          <img id="burger" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUg
-              AAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAFpJREFUSEtjZKAxYKSx+Qyj
-              FhAMYfoH0f/fv/8TdBYeBYysrCiOxvABzS2gxPXY9NI/DujuA1LjhGAko/uA5hZQGm
-              QjIJKxBRG+eCE5kgfEAlIifoRG8sgKIgDEFhgZvxaUQwAAAABJRU5ErkJggg==" alt="burger-menu">
+          <img id="burger" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAFpJREFUSEtjZKAxYKSx+QyjFhAMYfoH0f/fv/8TdBYeBYysrCiOxvABzS2gxPXY9NI/DujuA1LjhGAko/uA5hZQGmQjIJKxBRG+eCE5kgfEAlIifoRG8sgKIgDEFhgZvxaUQwAAAABJRU5ErkJggg==" 
+          alt="burger-menu">
         </nav>
         <div id="myNav" class="overlay hidden">
           <p id="close-nav">X</p>
@@ -200,15 +198,17 @@
               <option id="option__noche" value="noche">En la noche</option>
             </select>
             <br>
+
+            <!-- REVISAR LAS PROPIEDADES DEL BUTTON DEL RADIO TIENE LA MISMA FUNCION QUE EL SUBMIT -->
             <h3 id="ageRange" class="formcontacto__radio">Selecciona tu rango de edad: *</h3><br>
             <div class="radio" id="ageRanges">
-              <button><label for="radio13-18"><input type="radio" id="radio13-18" name="radio" value="13-18">13
-                a 18</label></button>
-                <button><label for="radio19-25"><input type="radio" id="radio19-25" name="radio" value="19-25">19
-                a 25</label></button>
-                <button><label for="radio26-30"><input type="radio" id="radio26-30" name="radio" value="26-30">26
-                a 30</label></button>
-                <button><label for="radio30"><input type="radio" id="radio30" name="radio" value="30+">30+</label></button>
+              <label for="radio13-18"><input type="radio" id="radio13-18" name="radio" value="13-18">13
+                a 18</label>
+                <label for="radio19-25"><input type="radio" id="radio19-25" name="radio" value="19-25">19
+                a 25</label>
+                <label for="radio26-30"><input type="radio" id="radio26-30" name="radio" value="26-30">26
+                a 30</label>
+                <label for="radio30"><input type="radio" id="radio30" name="radio" value="30+">30+</label>
             </div><br>
             <div class="error"></div>
             <button id="formcontacto__button" name="formcontacto__button" type="submit"

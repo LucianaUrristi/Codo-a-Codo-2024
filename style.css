@@ -2,7 +2,8 @@
   /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
 
     --cor-de-fundo: #F6BBBE;
-    --cor-de-fundo2: #9DAE7D;;
+    --cor-de-fundo2: #9DAE7D;
+    --cor-de-fundo3: #a0425a;
     --cor-de-link: #49373B;
     --red: rgba(209, 47, 47, 0.884);
     scroll-behavior: smooth;
@@ -322,7 +323,7 @@ pointer-events: none;
 
 /*Contacto*/
 section.formcontacto {
-    background-color: #a0425a;
+    background-color: var(--cor-de-fundo3);
     width: 100%;
     padding: 2% 0;
 }
@@ -409,6 +410,7 @@ section.formcontacto {
   font-weight: 100;
   color:aliceblue;
   font-size: 16px;
+  
 }
 
 .formcontacto__select{
@@ -421,13 +423,20 @@ section.formcontacto {
 }
 
 .radio {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 5px;
-    row-gap: 5px;
-    justify-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  column-gap: 5px;
+  row-gap: 5px;
+  margin-bottom: 16px;
+  color:aliceblue;
+  justify-content: space-between;
 
+}
+.radio label{
+  display: flex;
+  color:aliceblue;
+  
+  flex-wrap: wrap;
+  
 }
 
 .formcontacto__textarea:focus {
@@ -439,6 +448,7 @@ section.formcontacto {
 button {
     display: block;
     margin-right: auto;
+    margin-bottom: 5%;
     padding: 15px 30px;
     border: none;
     background-color: #F6BBBE;
@@ -448,11 +458,7 @@ button {
     font-size: 16px;
     font-weight: 550;
 }
-.radio button{
-  padding: 10px 30px 10px 20px;
-  width: 125px;
 
-}
 
 .formcontacto__button:hover {
     background-color: #d2898e;
@@ -594,9 +600,10 @@ section.footer {
   .formcontacto__turno,
   .formcontacto__subtext,
   .formcontacto__radio {
-    font-size: 14px;
+    font-size: 16px;
+    margin: 0;
   }
-
+  
   .formcontacto__input {
     width: 80%;
     font-size: 14px;
@@ -609,23 +616,14 @@ section.footer {
   .radio {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 5px;
-    row-gap: 5px;
-    justify-items: center;
-    justify-content: space-evenly;
+    justify-items: start;
     
   }
-
-  .radio button{
-    padding: 5px 20px 5px 10px;
-    font-size: 14px;
-    width: 125px;
-  }
-
 
   .formcontacto__button {
     padding: 10px 25px;
     font-size: 14px;
+    
   }
 }
 
