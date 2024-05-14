@@ -149,7 +149,7 @@ a:hover {
     position: absolute;
     right: 0;
     top: 0;
-    margin: 2vw 3vw 0 0;
+    margin: 6vw 7vw 0 0;
     font-size: 2.7em;
     z-index: 1;
 }
@@ -221,6 +221,9 @@ h1 {
 
 /*Sección Resumen*/
 
+section.historia{
+  background-color:#9DAE7D;
+}
 .titulo_historia {
   font-size: 30px;
   padding-bottom: 20px;
@@ -232,20 +235,23 @@ h1 {
   flex-direction: row-reverse;
   justify-content: space-evenly;
   width: 70%;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
   padding-top: 50px;
   pointer-events: none;
+  align-items: center;
 }
 
 .historia_parrafo {
   width: 50%;
+  font-size: 16px;
+  text-align: justify;
 }
 
 .imagen_historia {
   width: 350px;
   height: 550px;
-  
+  filter: contrast(200%);
 }
 
 .p_historia {
@@ -263,10 +269,11 @@ h1 {
 
 .container_personajes {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  height: 220px;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -306,9 +313,13 @@ pointer-events: none;
 
 /*Contacto*/
 section.formcontacto {
-    background-color: #9DAE7D;
+    background-color: #a0425a;
     width: 100%;
     padding: 2% 0;
+}
+
+.formcontacto__title{
+  color:aliceblue;
 }
 
 .formcontacto__contacto {
@@ -360,9 +371,17 @@ section.formcontacto {
   }
 }
 
+.formcontacto__subtext {
+  font-size: 16px;
+  font-weight: 100;
+  margin: 1% 0;
+  color:aliceblue;
+}
+
 .formcontacto__form {
   display: flex;
   flex-direction: column;
+  
 }
 
 .formcontacto__input {
@@ -377,17 +396,28 @@ section.formcontacto {
     font-size: 16px;    
 }
 
+.formcontacto__turno, .formcontacto__radio{
+  font-weight: 100;
+  color:aliceblue;
+  font-size: 16px;
+}
+
 .formcontacto__select{
-    width: 28%;
+  width: 28%;
+    
 }
 
 .formcontacto__input:focus {
-    border: 2px solid #7f8d65;
+    border: 2px solid #722b3d;
 }
 
 .radio {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-items: center;
+    justify-content: space-evenly;
 
 }
 
@@ -395,13 +425,9 @@ section.formcontacto {
   border: 2px solid #C56742;
 }
 
-.formcontacto__subtext {
-  font-size: 16px;
-  font-weight: 100;
-  margin: 1% 0;
-}
 
-.formcontacto__button {
+
+button {
     display: block;
     margin-right: auto;
     padding: 15px 30px;
@@ -411,7 +437,12 @@ section.formcontacto {
     border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 1.5%;
+    font-weight: 550;
+}
+.radio button{
+  padding: 10px 30px 10px 20px;
+  width: 125px;
+
 }
 
 .formcontacto__button:hover {
@@ -444,122 +475,6 @@ section.footer {
 }
 
 /*                 RESPONSIVE          */
-
-/*Mobile*/
-@media (max-width: 425px) {
-
-  /* Hero */
-
-  .title .sub {
-    font-size: 6.3vw;
-    margin-top: 7px;
-  }
-
-  video {
-    display: none;
-  }
-
-  .hero {
-    background-image: url(assets/img/mobile.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .overlay-content {
-    font-size: 2em;
-  }
-
-  
-
-  /* historia */
-
-  .contenedor_historia {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 100%;
-    height: 100%;
-  }
-
-  .historia_parrafo {
-    width: 80%;
-    height: auto;
-    padding: 40px;
-    padding-bottom: 5px;
-  }
-
-  .imagen_historia {
-    width: 100%;
-    height: auto;
-    filter: drop-shadow(16px 16px 20px black);
-    filter: contrast(200%);
-    padding-bottom: 30px;
-  }
-
-  /* personajes */
-  .container_personajes {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    height: 40%;
-    width: 80%;
-  }
-
-  .container_imagenes {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100px;
-    height: 100%;
-  }
-
-  .nombre_imagen {
-    text-align-last: center;
-    font-size: 1rem;
-    margin-top: 5px;
-    flex-direction: column;
-    width: 50%;
-  }
-    /*Form contacto*/
-
-    #chachamaru, #meow {
-        display: none;
-    }
-    
-    .formcontacto__title{
-        padding: 5%;
-        display: flex;
-        justify-content: center;
-        margin: 1%;
-        font-size: 24px;
-    }
-
-    .formcontacto__turno, .formcontacto__subtext, .formcontacto__radio{
-        font-size: 14px;
-    }
-
-    .formcontacto__input {
-        width: 80%;
-        font-size: 12px;
-    }
-    
-    .radio {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .formcontacto__button {
-        padding: 10px 25px;
-        font-size: 14px;
-        margin: auto;
-        
-    }
-    
-}
-
-
 /*Tablet*/
 
 
@@ -587,17 +502,19 @@ section.footer {
     display: none;
   }
 
+  /* FALTA ACOMODAR UN POCO LA IMAGEN DE LA HAMBURGUESA AL ACHICAR */
+
   #burger {
     display: block;
     height: 40px;
     cursor: pointer;
+    margin-left: 75%;
   }
 
   /* HISTORIA */
   .contenedor_historia {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: column-reverse;
     width: 100%;
     height: 100%;
   }
@@ -607,13 +524,16 @@ section.footer {
     height: auto;
     padding: 40px;
     padding-bottom: 5px;
+    margin: auto;
   }
 
   .imagen_historia {
-    width: 85%;
+    width: 60%;
     height: auto;
+    margin: auto;
     filter: drop-shadow(16px 16px 20px black);
     padding-bottom: 30px;
+    filter: contrast(200%);
   }
 
   .titulo_historia {
@@ -680,10 +600,154 @@ section.footer {
 .radio {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  column-gap: 5px;
+  row-gap: 5px;
+  justify-items: center;
+  justify-content: space-evenly;
+  
 }
+
+.radio button{
+  padding: 5px 20px 5px 10px;
+  font-size: 14px;
+  width: 125px;
+}
+
 
 .formcontacto__button {
   padding: 10px 25px;
   font-size: 14px;
 }
+}
+
+
+/*Mobile*/
+@media (max-width: 425px) {
+
+  /* Hero */
+
+  .title .sub {
+    font-size: 6.3vw;
+    margin-top: 7px;
+  }
+
+  video {
+    display: none;
+  }
+
+  .hero {
+    background-image: url(assets/img/mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .overlay-content {
+    font-size: 2em;
+  }
+
+  .overlay p {
+    margin: 10vw 7vw 0 0;
+  }
+
+  #burger {
+    display: block;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 60%;
+  }
+
+  /* historia */
+
+  .contenedor_historia {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+  }
+
+  .historia_parrafo {
+    width: 80%;
+    height: auto;
+    padding: 40px;
+    padding-bottom: 5px;
+    
+  }
+
+  .imagen_historia {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    filter: drop-shadow(16px 16px 20px black);
+    filter: contrast(200%);
+    padding-bottom: 30px;
+  }
+
+  /* personajes */
+  .container_personajes {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    height: 40%;
+    width: 80%;
+  }
+
+  .container_imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+  }
+
+  .nombre_imagen {
+    text-align-last: center;
+    font-size: 1rem;
+    margin-top: 5px;
+    flex-direction: column;
+    width: 50%;
+  }
+    /*Form contacto*/
+    .formcontacto__form{
+      align-items: center;
+    }
+
+    #chachamaru, #meow {
+        display: none;
+    }
+    
+    .formcontacto__title{
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+        margin: 1%;
+        font-size: 24px;
+    }
+
+    .formcontacto__turno, .formcontacto__subtext, .formcontacto__radio{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .formcontacto__input {
+        width: 80%;
+        font-size: 12px;
+        
+    }
+    
+    .radio {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+    }
+    
+    .formcontacto__button {
+        padding: 10px 25px;
+        font-size: 14px;
+        margin: auto;
+        
+    }
+    
 }
