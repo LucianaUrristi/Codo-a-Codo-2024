@@ -2,6 +2,7 @@
   /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
 
     --cor-de-fundo: #F6BBBE;
+    --cor-de-fundo2: #9DAE7D;;
     --cor-de-link: #49373B;
     --red: rgba(209, 47, 47, 0.884);
     scroll-behavior: smooth;
@@ -45,6 +46,10 @@ p, label {
 }
 
 .hero {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -188,6 +193,7 @@ h1 {
   height: 100px;
   width: 250px;
   border-radius: 5px;
+  border: none;
 }
 
 .iframeContainer {
@@ -220,6 +226,9 @@ h1 {
 }
 
 /*Sección Resumen*/
+.historia{
+  background-color: var(--cor-de-fundo2);;
+}
 
 section.historia{
   background-color:#9DAE7D;
@@ -572,52 +581,52 @@ section.footer {
   }
 
 
-/* formulario */
-#chachamaru {
-  height: 80%;
-  width: 80%;
-}
+  /* formulario */
+  #chachamaru {
+    height: 80%;
+    width: 80%;
+  }
 
-.formcontacto__title {
-  margin: 3% 0;
-}
+  .formcontacto__title {
+    margin: 3% 0;
+  }
 
-.formcontacto__turno,
-.formcontacto__subtext,
-.formcontacto__radio {
-  font-size: 14px;
-}
+  .formcontacto__turno,
+  .formcontacto__subtext,
+  .formcontacto__radio {
+    font-size: 14px;
+  }
 
-.formcontacto__input {
-  width: 80%;
-  font-size: 14px;
-}
+  .formcontacto__input {
+    width: 80%;
+    font-size: 14px;
+  }
 
-.formcontacto__select {
-  width: 50%;
-}
+  .formcontacto__select {
+    width: 50%;
+  }
 
-.radio {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 5px;
-  row-gap: 5px;
-  justify-items: center;
-  justify-content: space-evenly;
-  
-}
+  .radio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-items: center;
+    justify-content: space-evenly;
+    
+  }
 
-.radio button{
-  padding: 5px 20px 5px 10px;
-  font-size: 14px;
-  width: 125px;
-}
+  .radio button{
+    padding: 5px 20px 5px 10px;
+    font-size: 14px;
+    width: 125px;
+  }
 
 
-.formcontacto__button {
-  padding: 10px 25px;
-  font-size: 14px;
-}
+  .formcontacto__button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
 }
 
 
