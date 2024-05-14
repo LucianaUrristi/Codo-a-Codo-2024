@@ -74,7 +74,6 @@ function hide(e) {
     e.preventDefault();
     OPEN_NAV.classList.toggle("hidden");
     document.body.classList.toggle("no-scroll");
-    document.addEventListener("touchmove", preventScroll, { passive: false });
 }
 BURGER_ID.addEventListener("click", (e) => {
     hide(e);
@@ -82,3 +81,14 @@ BURGER_ID.addEventListener("click", (e) => {
 CLOSE_NAV.addEventListener("click", (e) => {
     hide(e);
 });
+
+
+document.querySelectorAll("#myNav a").forEach(link => {
+    link.addEventListener("click", (e) => {
+        const targetSectionId = e.target.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetSectionId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+        hide(e);
+    });
+});
+

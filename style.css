@@ -2,6 +2,7 @@
   /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
 
     --cor-de-fundo: #F6BBBE;
+    --cor-de-fundo2: #9DAE7D;;
     --cor-de-link: #49373B;
     --red: rgba(209, 47, 47, 0.884);
     scroll-behavior: smooth;
@@ -45,6 +46,10 @@ p, label {
 }
 
 .hero {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -188,6 +193,7 @@ h1 {
   height: 100px;
   width: 250px;
   border-radius: 5px;
+  border: none;
 }
 
 .iframeContainer {
@@ -220,6 +226,9 @@ h1 {
 }
 
 /*Sección Resumen*/
+.historia{
+  background-color: var(--cor-de-fundo2);;
+}
 
 .titulo_historia {
   font-size: 30px;
@@ -306,7 +315,7 @@ pointer-events: none;
 
 /*Contacto*/
 section.formcontacto {
-    background-color: #9DAE7D;
+    background-color: var(--cor-de-fundo2);;
     width: 100%;
     padding: 2% 0;
 }
@@ -460,7 +469,7 @@ section.footer {
   }
 
   .hero {
-    background-image: url(assets/img/mobile.png);
+    background-image: url(assets/img/mobile.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
