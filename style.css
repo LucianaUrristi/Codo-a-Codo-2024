@@ -254,14 +254,11 @@ section.historia{
 
 .historia_parrafo {
   width: 50%;
-  font-size: 16px;
-  text-align: justify;
 }
 
 .imagen_historia {
   width: 350px;
   height: 550px;
-  filter: contrast(200%);
 }
 
 .p_historia {
@@ -523,7 +520,7 @@ section.footer {
     display: block;
     height: 40px;
     cursor: pointer;
-    margin-left: 75%;
+    margin-left: 7em;
   }
 
   /* HISTORIA */
@@ -535,10 +532,6 @@ section.footer {
   }
 
   .historia_parrafo {
-    width: 80%;
-    height: auto;
-    padding: 40px;
-    padding-bottom: 5px;
     margin: auto;
   }
 
@@ -643,7 +636,7 @@ section.footer {
   }
 
   .hero {
-    background-image: url(assets/img/mobile.png);
+    background-image: url(assets/img/mobile.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -661,7 +654,8 @@ section.footer {
     display: block;
     height: 40px;
     cursor: pointer;
-    margin-left: 60%;
+    margin-left: 7em;
+
   }
 
   /* historia */
@@ -676,7 +670,6 @@ section.footer {
   .historia_parrafo {
     width: 80%;
     height: auto;
-    padding: 40px;
     padding-bottom: 5px;
     
   }
@@ -690,6 +683,9 @@ section.footer {
     padding-bottom: 30px;
   }
 
+  .personajes{
+    background-color: red;
+  }
   /* personajes */
   .container_personajes {
     display: flex;
