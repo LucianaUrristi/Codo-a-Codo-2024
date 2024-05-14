@@ -318,12 +318,12 @@ section.formcontacto {
     width: 90%;
     box-sizing: border-box;
     align-items: center;
+    justify-content: center;
 }
 
 .formcontacto__imagen {
   filter: drop-shadow(10px 7px 10px black);
-  width: 800px;
-  height: 500px;
+  
 }
 
 .chachamaru__image {
@@ -378,14 +378,14 @@ section.formcontacto {
 }
 
 .formcontacto__select{
-    width: 25%;
+    width: 28%;
 }
 
 .formcontacto__input:focus {
     border: 2px solid #7f8d65;
 }
 
-.checkbox {
+.radio {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
@@ -524,7 +524,7 @@ section.footer {
   }
     /*Form contacto*/
 
-    #chachamaru__image {
+    #chachamaru, #meow {
         display: none;
     }
     
@@ -536,7 +536,7 @@ section.footer {
         font-size: 24px;
     }
 
-    .formcontacto__turno, .formcontacto__subtext, .formcontacto__checkbox{
+    .formcontacto__turno, .formcontacto__subtext, .formcontacto__radio{
         font-size: 14px;
     }
 
@@ -545,11 +545,7 @@ section.footer {
         font-size: 12px;
     }
     
-    .formcontacto__select{
-        width: 40%;
-    }
-    
-    .checkbox {
+    .radio {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -657,7 +653,7 @@ section.footer {
 
 
 /* formulario */
-#chachamaru__image {
+#chachamaru {
   height: 80%;
   width: 80%;
 }
@@ -668,7 +664,7 @@ section.footer {
 
 .formcontacto__turno,
 .formcontacto__subtext,
-.formcontacto__checkbox {
+.formcontacto__radio {
   font-size: 14px;
 }
 
@@ -681,7 +677,7 @@ section.footer {
   width: 50%;
 }
 
-.checkbox {
+.radio {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
