@@ -1,6 +1,4 @@
 :root {
-  /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-
     --cor-de-fundo: #F6BBBE;
     --cor-de-fundo2: #9DAE7D;
     --cor-de-fundo3: #a0425a;
@@ -227,13 +225,12 @@ h1 {
 }
 
 /*Sección Resumen*/
-.historia{
-  background-color: var(--cor-de-fundo2);;
-}
 
 section.historia{
-  background-color:#9DAE7D;
+  background-color: var(--cor-de-fundo2);
+  width: 100%;
 }
+
 .titulo_historia {
   font-size: 30px;
   padding-bottom: 20px;
@@ -514,17 +511,18 @@ section.footer {
     display: none;
   }
 
-  /* FALTA ACOMODAR UN POCO LA IMAGEN DE LA HAMBURGUESA AL ACHICAR */
-
   #burger {
-    display: block;
+    display: flex;
     height: 40px;
     cursor: pointer;
-    margin-left: 7em;
+    
+  }
+  .overlay p {
+    margin: 6vw 4vw 0 0;
   }
 
   /* HISTORIA */
-  .contenedor_historia {
+  section.historia{
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
@@ -647,21 +645,17 @@ section.footer {
   }
 
   .overlay p {
-    margin: 10vw 7vw 0 0;
+    margin: 10vw 8vw 0 0;
   }
 
   #burger {
-    display: block;
     height: 40px;
     cursor: pointer;
-    margin-left: 7em;
-
   }
 
   /* historia */
-
+  
   .contenedor_historia {
-    display: flex;
     flex-direction: column-reverse;
     width: 100%;
     height: 100%;
