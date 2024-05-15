@@ -452,8 +452,8 @@ button {
   margin-bottom: 5%;
   padding: 15px 30px;
   border: none;
-  background-color: #F6BBBE;
-  color: #C56742;
+  background-color: var(--cor-de-fundo);
+  color: var(--cor-de-link);
   border-radius: 6px;
   cursor: pointer;
   font-size: 16px;
@@ -689,7 +689,7 @@ section.footer {
   }
 
   .personajes {
-    background-color: red;
+    background-color: var(--cor-de-fundo);
   }
 
   /* personajes */
@@ -761,8 +761,4 @@ section.footer {
     font-size: 14px;
     margin: auto;
   }
-  .formcontacto__text {
-    padding: 20px 0 30px 0;
-  }
-
 }
