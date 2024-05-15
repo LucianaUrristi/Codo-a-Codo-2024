@@ -310,6 +310,7 @@ section.historia {
   margin-top: 10px;
   flex-direction: column;
   padding-top: 30px;
+  pointer-events: none;
 }
 
 .subtitulo_personajes {
