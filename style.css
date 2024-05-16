@@ -1,14 +1,15 @@
 :root {
-    --cor-de-fundo: #F6BBBE;
-    --cor-de-fundo2: #9DAE7D;
-    --cor-de-fundo3: #a0425a;
-    --cor-de-link: #49373B;
-    --red: rgba(209, 47, 47, 0.884);
-    scroll-behavior: smooth;
-    -webkit-tap-highlight-color: transparent;
+  --cor-de-fundo: #a0425a;
+  --cor-de-fundo2: #32313d;
+  --cor-de-link: #dfd1d3;
+  --red: rgba(209, 47, 47, 0.884);
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 
-
+h2{
+  font-size: 40px;
+}
 body {
   box-sizing: border-box;
   background-color: var(--cor-de-fundo);
@@ -28,10 +29,11 @@ a,
 h2,
 h3,
 h4,
-p, label {
-    text-decoration: none;
-    color: var(--cor-de-link);
-    cursor: pointer;
+p,
+label {
+  text-decoration: none;
+  color: var(--cor-de-link);
+  cursor: pointer;
 }
 
 .pagina {
@@ -71,7 +73,7 @@ p, label {
 }
 
 #burger {
-    display: none;
+  display: none;
 }
 
 header nav ul {
@@ -119,21 +121,21 @@ a:hover {
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .no-scroll {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .overlay-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(assets/img/pattern.webp);
-    filter: brightness(.3) contrast(90%) saturate(250%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/img/pattern.webp);
+  filter: brightness(.3) contrast(90%) saturate(250%);
 }
 
 .overlay-content {
@@ -145,22 +147,22 @@ a:hover {
 }
 
 .overlay-content a {
-    text-align: center;
+  text-align: center;
 }
 
 .overlay p {
-    color: rgb(238, 229, 229);
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin: 6vw 7vw 0 0;
-    font-size: 2.7em;
-    z-index: 1;
+  color: rgb(238, 229, 229);
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 6vw 7vw 0 0;
+  font-size: 2.7em;
+  z-index: 1;
 }
 
 .overlay p:hover {
-    transform: scale(1.4);
-    color: var(--red);
+  transform: scale(1.4);
+  color: var(--red);
 }
 
 .title {
@@ -208,31 +210,30 @@ h1 {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #dbdbdd;
+  background: #dbdbdd;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--red);
+  background: var(--red);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(248, 41, 41, 0.884);
-    ;
+  background: rgba(248, 41, 41, 0.884);
+  ;
 }
 
 /*Sección Resumen*/
 
-section.historia{
+section.historia {
   background-color: var(--cor-de-fundo2);
   width: 100%;
 }
 
 .titulo_historia {
-  font-size: 30px;
   padding-bottom: 20px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -251,14 +252,11 @@ section.historia{
 
 .historia_parrafo {
   width: 50%;
-  font-size: 16px;
-  text-align: justify;
 }
 
 .imagen_historia {
   width: 350px;
   height: 550px;
-  filter: contrast(200%);
 }
 
 .p_historia {
@@ -268,10 +266,12 @@ section.historia{
 }
 
 /* personajes */
-.personajes{
+.personajes {
   width: 100%;
   padding-bottom: 50px;
-  }
+  padding: 50px 0 80px 0;
+  background-color: var(--cor-de-fundo);
+}
 
 
 .container_personajes {
@@ -310,38 +310,39 @@ section.historia{
   margin-top: 10px;
   flex-direction: column;
   padding-top: 30px;
+  pointer-events: none;
 }
 
 .subtitulo_personajes {
   text-align: center;
   padding: 20px;
-pointer-events: none;
+  pointer-events: none;
 }
 
 /*Contacto*/
 section.formcontacto {
-    background-color: var(--cor-de-fundo3);
-    width: 100%;
-    padding: 2% 0;
+  background-color: var(--cor-de-fundo2);
+  width: 100%;
+  padding: 60px 0 60px 0;
 }
 
-.formcontacto__title{
-  color:aliceblue;
+.formcontacto__title {
+  color: aliceblue;
 }
 
 .formcontacto__contacto {
-    display: flex;
-    margin: auto;
-    max-width: 1440px;
-    width: 90%;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  margin: auto;
+  max-width: 1440px;
+  width: 90%;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 
 .formcontacto__imagen {
   filter: drop-shadow(10px 7px 10px black);
-  
+
 }
 
 .chachamaru__image {
@@ -355,26 +356,30 @@ section.formcontacto {
 
 @keyframes fade-out {
   0% {
-      opacity: 1;
+    opacity: 1;
   }
+
   100% {
-      opacity: 0;
+    opacity: 0;
   }
 }
-.hidden{
+
+.hidden {
   display: none;
 }
-.block{
+
+.block {
   display: block;
   animation: fade-in 1s ease-out forwards;
 }
 
 @keyframes fade-in {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
+
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -382,32 +387,25 @@ section.formcontacto {
   font-size: 16px;
   font-weight: 100;
   margin: 1% 0;
-  color:aliceblue;
+  color: aliceblue;
 }
 
 .formcontacto__form {
   display: flex;
   flex-direction: column;
-  
+
 }
 
 .formcontacto__input {
-    padding: 2%;
-    margin: 2% 0;
-    border: none;
-    outline: none;
-    font-family: 'Raleway';
-    border-radius: 4px;
-    max-width: 1440px;
-    width: 90%;
-    font-size: 16px;    
-}
-
-.formcontacto__turno, .formcontacto__radio{
-  font-weight: 100;
-  color:aliceblue;
+  padding: 2%;
+  margin: 2% 0;
+  border: none;
+  outline: none;
+  font-family: 'Raleway';
+  border-radius: 4px;
+  max-width: 1440px;
+  width: 90%;
   font-size: 16px;
-  
 }
 .fanArt-files{
   color:aliceblue;
@@ -424,13 +422,21 @@ section.formcontacto {
   
 }
 
-.formcontacto__select{
+.formcontacto__turno,
+.formcontacto__radio {
+  font-weight: 100;
+  color: aliceblue;
+  font-size: 16px;
+
+}
+
+.formcontacto__select {
   width: 28%;
-    
+
 }
 
 .formcontacto__input:focus {
-    border: 2px solid #722b3d;
+  border: 2px solid #722b3d;
 }
 
 .radio {
@@ -438,42 +444,41 @@ section.formcontacto {
   column-gap: 5px;
   row-gap: 5px;
   margin-bottom: 16px;
-  color:aliceblue;
+  color: aliceblue;
   justify-content: space-between;
 
 }
-.radio label{
+
+.radio label {
   display: flex;
-  color:aliceblue;
-  
+  color: aliceblue;
+
   flex-wrap: wrap;
-  
+
 }
 
 .formcontacto__textarea:focus {
   border: 2px solid #C56742;
 }
 
-
-
 button {
-    display: block;
-    margin-right: auto;
-    margin-bottom: 5%;
-    padding: 15px 30px;
-    border: none;
-    background-color: #F6BBBE;
-    color: #C56742;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 550;
+  display: block;
+  margin-right: auto;
+  margin-bottom: 5%;
+  padding: 15px 30px;
+  border: none;
+  background-color: var(--cor-de-fundo);
+  color: var(--cor-de-link);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 550;
 }
 
 
 .formcontacto__button:hover {
-    background-color: #d2898e;
-    transform: translateY(-2px);
+  background-color: #d2898e;
+  transform: translateY(-2px);
 }
 
 .error {
@@ -482,8 +487,8 @@ button {
 }
 
 #chachamaru__image {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -532,14 +537,15 @@ section.footer {
     display: flex;
     height: 40px;
     cursor: pointer;
-    
+
   }
+
   .overlay p {
     margin: 6vw 4vw 0 0;
   }
 
   /* HISTORIA */
-  section.historia{
+  section.historia {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
@@ -547,10 +553,6 @@ section.footer {
   }
 
   .historia_parrafo {
-    width: 80%;
-    height: auto;
-    padding: 40px;
-    padding-bottom: 5px;
     margin: auto;
   }
 
@@ -606,16 +608,17 @@ section.footer {
   }
 
   .formcontacto__title {
-    margin: 3% 0;
+    margin: 3% 0 10px 0;
   }
-
   .formcontacto__turno,
   .formcontacto__subtext,
   .formcontacto__radio {
     font-size: 16px;
     margin: 0;
   }
-  
+  .formcontacto__subtext{
+    margin-bottom: 10px;
+  }
   .formcontacto__input {
     width: 80%;
     font-size: 14px;
@@ -629,14 +632,17 @@ section.footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: start;
-    
+
   }
 
   .formcontacto__button {
     padding: 10px 25px;
     font-size: 14px;
-    
   }
+  .formcontacto__text {
+    padding: 25px 0 25px 0;
+  }
+
 }
 
 
@@ -675,7 +681,7 @@ section.footer {
   }
 
   /* historia */
-  
+
   .contenedor_historia {
     flex-direction: column-reverse;
     width: 100%;
@@ -685,9 +691,8 @@ section.footer {
   .historia_parrafo {
     width: 80%;
     height: auto;
-    padding: 40px;
     padding-bottom: 5px;
-    
+
   }
 
   .imagen_historia {
@@ -695,8 +700,11 @@ section.footer {
     height: auto;
     margin: auto;
     filter: drop-shadow(16px 16px 20px black);
-    filter: contrast(200%);
     padding-bottom: 30px;
+  }
+
+  .personajes {
+    background-color: var(--cor-de-fundo);
   }
 
   /* personajes */
@@ -725,45 +733,47 @@ section.footer {
     flex-direction: column;
     width: 50%;
   }
-    /*Form contacto*/
-    .formcontacto__form{
-      align-items: center;
-    }
 
-    #chachamaru, #meow {
-        display: none;
-    }
-    
-    .formcontacto__title{
-        padding: 5%;
-        display: flex;
-        justify-content: center;
-        margin: 1%;
-        font-size: 24px;
-    }
+  /*Form contacto*/
+  .formcontacto__form {
+    align-items: center;
+  }
 
-    .formcontacto__turno, .formcontacto__subtext, .formcontacto__radio{
-        font-size: 14px;
-        text-align: center;
-    }
+  #chachamaru,
+  #meow {
+    display: none;
+  }
 
-    .formcontacto__input {
-        width: 80%;
-        font-size: 12px;
-        
-    }
-    
-    .radio {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin: auto;
-    }
-    
-    .formcontacto__button {
-        padding: 10px 25px;
-        font-size: 14px;
-        margin: auto;
-        
-    }
-    
+  .formcontacto__title {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    font-size: 24px;
+  }
+
+  .formcontacto__turno,
+  .formcontacto__subtext,
+  .formcontacto__radio {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .formcontacto__input {
+    width: 80%;
+    font-size: 12px;
+
+  }
+
+  .radio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+  }
+
+  .formcontacto__button {
+    padding: 10px 25px;
+    font-size: 14px;
+    margin: auto;
+  }
 }
