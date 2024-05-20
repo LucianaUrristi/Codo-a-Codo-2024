@@ -8,7 +8,7 @@
 </h1>
 
 <p align="center">
-  <a href="https://lucianaurristi.github.io/Codo-a-Codo-2024/">DEPLOY</a>
+  <a href="https://lucianaurristi.github.io/Codo-a-Codo-2024/" target="_blank">DEPLOY</a>
 </p>
 
 ***
